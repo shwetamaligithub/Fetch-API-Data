@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Album example · Bootstrap v5.3</title>
+    <!--All css here-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .grid-container {
+    display: grid;
+    grid-template-columns:350px 350px 350px;
+    grid-gap: 10px;
+    padding: 10px;
+    }
+    .div1{
+    clip-path: inset(19px 19px 19px 19px round 10px);
+    }
+    .col{
+     display: flex;
+    }
+    /* Bottom left text */
+    .bottom-left {
+    position: absolute;
+    bottom: 40px;
+    left: 25px;
+    font-size: small;
+    }
+    .bottom-left2 {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: small;
+    }
+    .bottom-left3 {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    font-size: small;
+    }
+    .bottom-left4 {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    font-size: small;
+    }
+    /* Top left text */
+    .top-left {
+    position: absolute;
+    top: 600px;
+    text-align: left;
+    color: white;
+    }
+    .top-left1{
+    position: absolute;
+    top: 1000px;
+    text-align: left;
+    color: black;
+    }
+    /* Bottom right text */
+    .bottom-right {
+    position: absolute;
+    bottom: 40px;
+    right: 25px;
+    font-size: small;
+    }
+    .bottom-right2 {
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: small;
+    }
+    .bottom-right3 {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    font-size: small;
+    }
+    .card-body{
+      margin: 15px;
+    }
+    .overlay {
+    position: absolute; 
+    background: rgba(57, 57, 57, 0.5);
+    /* left overlay text */
+    font-size: small;
+    color: white;
+    text-align: left;
+    }
+    .overlay_1 {
+    left: 17px;
+    top: 198px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px; /* 5px rounded corners */
+    }
+    .nav-link{
+    color: grey;   
+    }
+    .navbar-brand{
+    color: red;
+    }
+    .navbar-toggler{
+    color: white;
+    background-color: black;
+    }
+    .overflow-x-scroll::-webkit-scrollbar {
+    display: none;
+    }
+    .button {
+    color: white;
+    margin-left: 900px;
+    }
+    </style>
+  </head>
+  <body>
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>About</h4>
+          <p class="text-body-secondary">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+            <li><a href="#" class="text-white">Like on Facebook</a></li>
+            <li><a href="#" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-white shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <strong>BookUsNow</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>Categories
+      </button>
+      <input class="search" type="search" placeholder="DIJ phantom">
+      <img src="../assets/favorite.jpg" alt="image">
+      <strong class="color-modes">Favorites</strong>
+      <button type="button" class="btn btn-outline-secondary">Sign In</button>
+      <div>
+        <img src="../assets/location.jpg" alt="image">
+        <strong class="color-modes"> Mumbai,India</strong>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+        </svg>
+      </div>  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Streams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Plays</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+            </ul>
+            <span class="navbar-text"> Navbar text with an inline element </span>
+          </div>
+        </nav>
+    </div>
+  </div>
+</header>
+<main>
+<div class="container-fluid">
+<div class="bg-image" 
+  style="background-image: url('assets/Banner.svg');
+        height: 100vh">
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-7 col-md-8 mx-auto">
+         <h1 class="fw-light"><strong>Discover Exciting Events Happening Near You-Stay Tuned Updates!</strong></h1>
+          <p class="font">Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
+        </div>
+        <div class="top-left">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Recommanded shows</strong><img src="/assets/arrow.jpg" alt="image">
+          <a href="javascript:void(0)" class="button" onclick="scroller()">See All</a>
+          <div class="overflow-x-scroll" id="scrollableElement">
+            <div class="col">
+              <div class="div1" *ngFor="let event of event1">
+                  <div class="card" style=width:250px;>
+                      <img class="card-img-top" src="{{event.imgUrl}}" width="100px" alt="event">
+                      <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+                      <div class="bottom-left">{{event.eventName | slice:0:13}}</div>
+                      <div class="bottom-left2"><img src="assets/icon.png" alt="image">{{event.cityName}}</div>
+                      <div class="bottom-right">March {{event.date | slice:8:10}}, 2024</div>
+                      <div class="bottom-right2">{{event.weather}}|{{event.distanceKm | slice:0:2}}Km</div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+      </div>
+    </section>
+</div>
+<section class="py-5 text-center container">
+  <div class="top-left1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Upcoming Events</strong><img src="/assets/arrow right.jpg" alt="image">
+    <div class="grid-container">
+      <div *ngFor="let event of event2 let i = index">
+              <div name="album" [ngClass]="i < 3 ? 'card' : 'card d-none'" [attr.id]="'card' + (i + 1)" style="width: 350px;">
+                <img class="card-img-top" src="{{event.imgUrl}}" alt="event">
+                          <div class="card-body">
+                              <div class="bottom-left4"><strong>{{event.eventName | slice:0:32}}</strong></div>
+                              <div class="bottom-left3"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                              </svg>{{event.cityName}}</div>
+                              <div class="bottom-right3">{{event.weather}}|{{event.distanceKm | slice:0:2}}Km</div>
+                              <div class="overlay overlay_1">March {{event.date | slice:8:10}}, 2024</div>
+                            </div>
+              </div>
+      </div>
+    </div>
+  </div>  
+</section>
+</div>
+</main>
+<!--All js here-->
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<router-outlet />
