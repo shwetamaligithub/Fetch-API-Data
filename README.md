@@ -51,5 +51,5 @@ An Angular service class provides reusable functionality to your Angular applica
 Services are defined using the @Injectable() decorator, which tells Angular that the class can be injected into other classes as a dependency. This allows you to easily share code and data between different parts of your application.
 
 - ## Rendering Data:
-Now, let's render the fetched joke in our app's component. Open the src/app.component.ts file.
+Now, let's render the fetched Data in our app's component. Open the src/app.component.ts file.
 The Data property is a string that will hold the Data that is fetched from the API. The constructor method takes an instance of the DataService class as a dependency. The DataService class is used to fetch Data from an API. The fetchData() method calls the getData() method on the DataService class and subscribes to the returned Observable.
