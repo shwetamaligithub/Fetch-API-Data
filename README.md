@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Fetching Events:
 As shown in the images above, there are two types of events. Recommended shows and upcoming events.
 ## Deliverables:
-- A link to the live site, hosted on platforms like Netlify, or Vercel.
+- A link to the live site, hosted on platform like LinkedIn.
 - The source code in a GitHub repository, with a README.md that includes:
    - Project overview.
    - Setup and local run instructions.
